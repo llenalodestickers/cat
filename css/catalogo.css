@@ -1,0 +1,13 @@
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  background: var(--blanco);
+  border-radius: var(--radio);
+  padding: 10px;
+  text-align: center;
+}

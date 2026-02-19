@@ -1,0 +1,160 @@
+/* Landing page sections */
+
+/* Galeria / Categories Masonry Grid */
+.galeria-seccion {
+  padding: 40px 18px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.galeria-seccion h2 {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.galeria-subtitle {
+  text-align: center;
+  margin: 0 0 24px;
+  opacity: 0.8;
+}
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 14px;
+}
+
+@media (max-width: 900px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.masonry-item:hover {
+  transform: scale(1.03);
+}
+
+.masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.masonry-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.8));
+  padding: 30px 14px 14px;
+  color: #fff;
+}
+
+.masonry-item-overlay h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Lo mas pedido section */
+.mas-vendido-seccion {
+  padding: 40px 18px;
+  max-width: 1140px;
+  margin: 0 auto;
+  background: #f8f8f8;
+}
+
+.mas-vendido-seccion h2 {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.mas-vendido-subtitle {
+  text-align: center;
+  margin: 0 0 24px;
+  opacity: 0.8;
+}
+
+/* Instagram section */
+.instagram-seccion {
+  padding: 40px 18px;
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.instagram-seccion h2 {
+  margin: 0 0 8px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+
+.instagram-subtitle {
+  margin: 0 0 24px;
+  opacity: 0.8;
+}
+
+.instagram-feed {
+  margin-bottom: 24px;
+}
+
+.instagram-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #151515;
+  gap: 10px;
+}
+
+.instagram-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.instagram-link span {
+  font-weight: 600;
+  color: #e1306c;
+}
+
+.instagram-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 14px;
+}
+
+.instagram-post {
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.instagram-post img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.instagram-post:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,19 @@
+:root {
+  --amarillo: #ffc800;
+  --negro: #0f0f0f;
+  --gris: #f2f2f2;
+  --blanco: #ffffff;
+  --sombra: 0 10px 25px rgba(0,0,0,0.15);
+  --radio: 18px;
+  --transicion: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--gris);
+}
